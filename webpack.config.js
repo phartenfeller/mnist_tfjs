@@ -20,6 +20,8 @@ const config = {
   plugins: [
     new CopyPlugin([
       { from: './index.html', to: './' },
+      { from: './styles.css', to: './' },
+      { from: './model', to: './model' },
     ]),
   ],
 };
