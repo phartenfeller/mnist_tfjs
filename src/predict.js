@@ -5,7 +5,7 @@ let model;
 
 
 export const initModel = async () => {
-  model = await tf.loadLayersModel('./model/model.json');
+  model = await tf.loadLayersModel('../model/model.json');
   model.summary();
 };
 
