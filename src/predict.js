@@ -46,8 +46,8 @@ export const predict = async () => {
     const imageData = prepareImageData();
     const tensor = tf.browser.fromPixels(imageData, 1)
       .reshape([1, 28, 28, 1])
-      .cast('float32')
-      .div(tf.scalar(255));
+      .cast('float32');
+      // .div(tf.scalar(255));
 
     console.log('tensor =>', tensor);
     tensor.print();

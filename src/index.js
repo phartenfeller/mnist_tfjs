@@ -35,7 +35,7 @@ const index = (p) => {
     for (let i = 0; i < points.length; i++) {
       p.vertex(points[i].x, points[i].y);
     }
-
+    p.smooth();
     p.endShape();
   };
 
