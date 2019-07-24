@@ -1,5 +1,5 @@
 import * as P5 from 'p5';
-import { CANVAS_DIM } from './consts';
+import { CANVAS_DIM } from './constants';
 import { initModel, predict } from './predict';
 
 
@@ -17,6 +17,7 @@ const index = (p) => {
     canvasObj.width = CANVAS_DIM;
   };
 
+  // logic for drawing on the canvas
   p.mouseDragged = () => {
     const data = {
       x: p.mouseX,
@@ -48,9 +49,13 @@ const index = (p) => {
     start = false;
   };
 
+  // on button click
   document.getElementById('predict').addEventListener('click', () => {
-    console.log('btn click...');
     predict();
+    p.clear();
+  });
+
+  document.getElementById('clear').addEventListener('click', () => {
     p.clear();
   });
 };
