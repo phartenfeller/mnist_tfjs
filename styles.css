@@ -28,6 +28,10 @@ button:hover {
   background: #3939c5;
 }
 
+.primary:disabled {
+  background: gray;
+}
+
 table {
   margin: 10px;
 }
