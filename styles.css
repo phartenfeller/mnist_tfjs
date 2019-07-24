@@ -1,3 +1,46 @@
 canvas {
   border: solid;
 }
+
+.btn-bar {
+  margin: 10px;
+}
+
+button {
+  padding: 8px 20px;
+  box-shadow: 0px 2px 4px #69696d6b;
+  border-radius: 32px;
+  font-size: 16px;
+  border: none;
+}
+
+button:hover {
+  background: #e2e2e2;
+}
+
+.primary {
+  color: white;
+  background: #5151ff;
+  box-shadow: 0px 2px 4px #1e1e9c6b;
+}
+
+.primary:hover {
+  background: #3939c5;
+}
+
+table {
+  margin: 10px;
+}
+
+.header-row {
+  font-weight: bold;
+  text-align: center;
+}
+
+.result-row {
+  text-align: right;
+}
+
+.prediction {
+  background: #aafdaa;
+}
