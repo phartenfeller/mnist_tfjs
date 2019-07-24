@@ -1,5 +1,29 @@
+body {
+  margin: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
 canvas {
   border: solid;
+  margin-left: 16px;
+}
+
+header {
+  background: #5151ff;
+  color: white;
+  height: 50px;
+  text-align: center;
+  font-size: 32px;
+  box-shadow: 0px 2px 4px #80808091;
+}
+
+header > span {
+  vertical-align: middle;
+}
+
+#main {
+  margin-left: 16px;
 }
 
 .btn-bar {
@@ -34,11 +58,19 @@ button:hover {
 
 table {
   margin: 10px;
+  margin-left: 16px;
+  border-collapse: collapse;
+  font-size: 20px;
+}
+
+td {
+  padding: 4px 8px;
 }
 
 .header-row {
   font-weight: bold;
   text-align: center;
+  background: #efefef;
 }
 
 .result-row {
@@ -47,4 +79,8 @@ table {
 
 .prediction {
   background: #aafdaa;
+}
+
+.result-img {
+  text-align: center;
 }
