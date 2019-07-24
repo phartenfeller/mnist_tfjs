@@ -27,13 +27,12 @@ const addResultsRow = (predictions, img) => {
   row.className = 'result-row';
   cell = row.insertCell(0);
   cell.appendChild(img);
+  cell.className = 'result-img';
 
   for (let i = 0; i < 10; i++) {
     const fixedPrediction = predictions[i].toFixed(2);
-    console.log('fixedPrediction =>', fixedPrediction);
-    const prediction = predictions[i] === 1 ? 100 : fixedPrediction;
     cell = row.insertCell(i + 1);
-    cell.innerHTML = prediction;
+    cell.innerHTML = fixedPrediction;
 
     if (i === predictedNumber) {
       cell.className = 'prediction';

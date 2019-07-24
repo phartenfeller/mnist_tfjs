@@ -9,7 +9,8 @@ let scaledCanvas;
 
 
 export const initModel = async () => {
-  model = await tf.loadLayersModel('../model/model.json');
+  model = await tf.loadLayersModel('./model/model.json');
+  document.getElementById('predict').disabled = false;
   model.summary();
 };
 
